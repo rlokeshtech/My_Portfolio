@@ -264,12 +264,13 @@ header {
 @media (max-width: 768px) {
   /* Header */
   header {
-    gap: 10px;
     position: fixed;
-    width: 99%;
+    width: 226px;
     display:flex;
-    height: 60px;
+    flex-direction: column;
+    height: 150px;
     justify-content: center;
+    align-items: center;
     background-color: rgb(48, 48, 48);
     /* filter: opacity(70%); */
     color: white;
@@ -279,7 +280,7 @@ header {
 }
 
 .nav-bar {
-    display: s;
+    display: flex;
     }
 
 .nav-bar a {
@@ -327,5 +328,49 @@ header {
     border-radius: 20px;
     border: none;
 }
+ 
+
+
+
+.container3{
+    background-image: url(./assests/white_abstract_low_poly_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+}
+.tech_info1{
+    display: block;
+    justify-content: space-evenly;
+    padding: 70px 0px 0px 0px;
+    gap: 100px;
+}
+.tech_info2{
+    display: block;
+    justify-content: end;
+    padding: 50px 0px 0px 10px;
+    gap: 160px;
+    margin: 0px 60px 0px 0px;
+}
+.tech_info1 p,.tech_info2 p{
+    font-size: 30px; 
+}
+.tech_info1-2{
+    border-left: 5px solid gray;
+    width: 20%;
+    padding: 30px;
+    border-radius: 20px;
+    line-height: 30px;
+    box-shadow: 10px 4px 12px rgba(0,0,0,0.1); 
+    transition: 0.2s ease-in-out;
+}
+.tech_info1-2 p{
+  margin: 0px 20px 10px 0px;
   
+}
+.tech_info1-2:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 }
