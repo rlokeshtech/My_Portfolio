@@ -3,7 +3,7 @@
     padding: 0px;
 }
 html{
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 body {
     /* background: fixed linear-gradient(to bottom,black, darkgray, darkgray); */ 
@@ -82,7 +82,7 @@ header {
 }
 
 .container1 {
-    height: 350px;
+    height: 400px;
     /* margin: 0px 20px; */
     padding: 150px 0px 0px 100px;
     color: white;
@@ -174,6 +174,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
+    padding: 100px 0px 0px 0px;
 }
 .about{
     text-align: start;
@@ -208,16 +209,23 @@ header {
     background-image: url(./assests/white_abstract_low_poly_background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 700px;
 }
-.tech_info1, .tech_info2{
+.tech_info1{
     display: flex;
     justify-content: space-evenly;
-    padding: 100px 0px 0px 0px;
+    padding: 70px 0px 0px 0px;
     gap: 100px;
 }
-.tech_info1 p{
-    font-size: 30px;
+.tech_info2{
+    display: flex;
+    justify-content: end;
+    padding: 50px 0px 0px 10px;
+    gap: 160px;
+    margin: 0px 60px 0px 0px;
+}
+.tech_info1 p,.tech_info2 p{
+    font-size: 30px; 
 }
 .tech_info1-2{
     border-left: 5px solid gray;
@@ -225,15 +233,21 @@ header {
     padding: 30px;
     border-radius: 20px;
     line-height: 30px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+    box-shadow: 10px 4px 12px rgba(0,0,0,0.1); 
     transition: 0.2s ease-in-out;
+}
+.tech_info1-2 p{
+  margin: 0px 20px 10px 0px;
+  
 }
 .tech_info1-2:hover{
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
+.container4{
+    height: 500px;
+}
 
 
 
@@ -248,38 +262,70 @@ header {
 
 
 @media (max-width: 768px) {
-    header{
-        flex-wrap: wrap; 
-        justify-content: center; 
-        height: 100px;
-      }
-    .logo{
-        display: none;
-    }
-    .container1{
-        /* Stack items vertically and put the image first on small screens */
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 20px;
-        /* reduce top padding for mobile */
-        padding: 120px 0 0 0;
-        height: 100%; /* let content determine height on mobile */
-        justify-content: center;
+  /* Header */
+  header {
+    gap: 10px;
+    position: fixed;
+    width: 99%;
+    display:flex;
+    height: 60px;
+    justify-content: center;
+    background-color: rgb(48, 48, 48);
+    /* filter: opacity(70%); */
+    color: white;
+  }
+  .logo h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-bar {
+    display: s;
     }
 
-    /* Make the text block full-width and center on mobile */
-    .container1-1{
-        width: 90%;
-        margin: 0;
-        text-align: center;
-    }
+.nav-bar a {
+    text-decoration: none;
+}
 
-    /* Slightly reduce the profile image on small screens */
-    .container1-2 img{
-        width: 180px;
-        height: 180px;
-        margin-top: 10px;
-    }
+.nav-bar a p {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.nav-bar a p:hover {
+    /* width:70px; */
+    /* padding:2px 0px 0px 0px; */
+    color: black;
+    height: 30px;
+}
+
+.social {
+    padding: ;
+}
+
+.social button {
+    width: 80px;
+    height: 40px;
+    background: #000;
+    color: white;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    border: none;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.social button:hover {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border: none;
+}
+  
 }
